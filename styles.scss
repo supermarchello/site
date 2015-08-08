@@ -1,0 +1,27 @@
+$mycolor:#bcbcbc;
+$mysize:24px;
+
+@mixin mybutton($width, $height, $text-size, $text-color){
+		width: $width;
+		height: $height;
+		line-height: $height;
+		text-align: center;
+		font-size: $text-size;
+		color: $text-color;
+		border: 1px solid black;
+		display: block;
+		cursor: pointer;
+}
+
+.abc-button{
+	@include mybutton(200px, 80px, 32px, red);
+}
+
+.abc{
+	font-size: $mysize;
+	color:$mycolor;
+}
+.abc2{
+	font-size: $mysize+4;
+	color: $mycolor;
+}
